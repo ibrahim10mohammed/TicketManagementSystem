@@ -6,7 +6,7 @@ namespace TicketManagementSystem.Domain.Repository
     {
         Task<Ticket> GetByIdAsync(Guid id);
         Task UpdateAsync(Ticket ticket);
-        Task<Ticket> CreateTicketAsync(Ticket book);
+        Task<Ticket> CreateTicketAsync(Ticket ticket);
         Task<List<Ticket>> UpdateTicketsColorsAsync();
         List<Ticket> GetAllTicketsAsync(int pageNumber, int pageSize);
         int GetTotalCountAsync();

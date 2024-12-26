@@ -21,10 +21,10 @@ namespace TicketManagementSystem.Application.Tickets.Queries
 
             var tickets = _ticketRepository.GetAllTicketsAsync(request.PageNumber, request.PageSize);
 
-            var booksList = _mapper.Map<List<TicketVm>>(tickets);
+            var ticketsList = _mapper.Map<List<TicketVm>>(tickets);
             return new PaginatedResponse<TicketVm>
             {
-                Items = booksList,
+                Items = ticketsList,
                 TotalCount = totalCount
             };
         }

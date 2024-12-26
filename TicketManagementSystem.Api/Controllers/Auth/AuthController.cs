@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TicketManagementSystem.Application.Auth.Commands;
 
-namespace BooksInventoryManagement.Api.Controllers.Auth
+namespace TicketManagementManagement.Api.Controllers.Auth
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -16,12 +16,14 @@ namespace TicketManagementSystem.Application.Tickets.ViewModels
         public string GetColor()
         {
             var timeElapsed = DateTime.UtcNow - CreatedAt;
-            if (timeElapsed.TotalMinutes >= 15)
-                return "Yellow";
-            else if (timeElapsed.TotalMinutes >= 30)
-                return "Green";
+            if (timeElapsed.TotalMinutes >= 60)
+                return "Red";
             else if (timeElapsed.TotalMinutes >= 45)
                 return "Blue";
+            else if (timeElapsed.TotalMinutes >= 30)
+                return "Green";
+            else if (timeElapsed.TotalMinutes >= 15)
+                return "Yellow";
             else
                 return "Red";
         }
