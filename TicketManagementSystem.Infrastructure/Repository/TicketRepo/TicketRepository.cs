@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Data.Entity;
-using TicketManagementSystem.Domain.Entities;
+﻿using TicketManagementSystem.Domain.Entities;
 using TicketManagementSystem.Domain.Repository;
 using TicketManagementSystem.Infrastructure.DataContext;
 
